@@ -13,10 +13,7 @@ After a survey of your organisation, it has transpired that a few of the respond
 Your function should take an array of people objects, and return a new array of people objects whose profession is not `mole`.
 
 ```js
-const employees = [
-  { name: "Sam", profession: "artist" },
-  { name: "Mitch", profession: "mole" }
-];
+const employees = [{ name: 'Sam', profession: 'artist' }, { name: 'Mitch', profession: 'mole' }];
 
 removeAgents(employees); // returns [{name: 'Sam', profession: 'artist'}];
 ```
@@ -30,12 +27,12 @@ Given an array of guest objects containing `title`, `forename`, `lastname` and `
 ```js
 const guests = [
   {
-    title: "Mr",
-    forename: "Sam",
-    surname: "Caine",
+    title: 'Mr',
+    forename: 'Sam',
+    surname: 'Caine',
     age: 30,
-    company: "Northcoders"
-  }
+    company: 'Northcoders',
+  },
 ];
 
 makeNameTags(guests); // returns ['Mr Sam Caine, Northcoders']
@@ -46,8 +43,8 @@ makeNameTags(guests); // returns ['Mr Sam Caine, Northcoders']
 Usually we'd use survey monkey, but the managers have taken to building polls across the organisation as strings. Given an array of strings, please build a much more useful poll object.
 
 ```js
-createPoll(["cake", "biscuit", "biscuit"]); // returns {cake: 1, biscuit: 2}
-createPoll(["dog", "dog", "dog"]); // returns {dog: 3}
+createPoll(['cake', 'biscuit', 'biscuit']); // returns {cake: 1, biscuit: 2}
+createPoll(['dog', 'dog', 'dog']); // returns {dog: 3}
 ```
 
 Your final test should be using the NCFruitBowl from the challenge1-data file. _DO NOT COPY AND PASTE THIS INTO YOUR SPEC FILE - it's huge!_ Be sure to export it properly. It should return the following object:
@@ -142,7 +139,7 @@ returnsFalse(); // returns false
 ```
 
 ```js
-const isEven = num => num % 2 === 0;
+const isEven = (num) => num % 2 === 0;
 const isOdd = invert(isEven);
 isOdd(1); // returns true
 isOdd(2); // returns false
@@ -199,9 +196,9 @@ C : {},
 It must have an `addStock` method which will add new stock to the vending machine at the correct position.
 
 ```js
-const marsBars = { name: "marsBar", price: 50, quantity: 6 };
+const marsBars = { name: 'marsBar', price: 50, quantity: 6 };
 const testMachine = new VendingMachine();
-testMachine.addStock(marsBars, "A");
+testMachine.addStock(marsBars, 'A');
 testMachine.stock;
 /**
 { A: { name: 'marsBar', price: 50, quantity: 6 },
@@ -224,19 +221,19 @@ testMachine.credit; // 60;
 It must have a `purchaseItem` method which will **decrease** the quantity of the stock if there is sufficient credit and returns the stock name.
 
 ```js
-const marsBars = { name: "marsBar", price: 50, quantity: 6 };
+const marsBars = { name: 'marsBar', price: 50, quantity: 6 };
 const testMachine = new VendingMachine();
-testMachine.addStock(marsBars, "A");
+testMachine.addStock(marsBars, 'A');
 testMachine.addCredit(30);
-testMachine.purchaseItem("A"); // returns 'Insufficent credit!'
+testMachine.purchaseItem('A'); // returns 'Insufficent credit!'
 ```
 
 ```js
-const marsBars = { name: "marsBar", price: 50, quantity: 6 };
+const marsBars = { name: 'marsBar', price: 50, quantity: 6 };
 const testMachine = new VendingMachine();
-testMachine.addStock(marsBars, "A");
+testMachine.addStock(marsBars, 'A');
 testMachine.addCredit(60);
-testMachine.purchaseItem("A"); // returns 'marsBar'
+testMachine.purchaseItem('A'); // returns 'marsBar'
 testMachine.stock;
 /**
 { A: { name: 'marsBar', price: 50, quantity: 5 },
@@ -285,26 +282,27 @@ Do this with asynchronous TDD.
 
 ## Section 5 - Recursion
 
-
 ### 1 - deepEntries
 
-Implement a function `deepEntries` that will take an object as its argument and go through that object to convert any nested-objects into an array of entries.  Each entry is itself a sub-array with the key-value pair from the original object.  You should use the native method [`Object.entries`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) to help you in your implementation.
+Implement a function `deepEntries` that will take an object as its argument and go through that object to convert any nested-objects into an array of entries. Each entry is itself a sub-array with the key-value pair from the original object. Your function should be a recursive version of the native method [`Object.entries`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries). Use the documentation to help you in your implementation, but avoid using the method.
 
 ```js
-
-deeplyEntries({name: "Sam" });  // returns [ ["name", "Sam"] ]
-deepEntries({ name: "Sam", favBook: "Blood Meridian" })
+deeplyEntries({ name: 'Sam' }); // returns [ ["name", "Sam"] ]
+deepEntries({ name: 'Sam', favBook: 'Blood Meridian' });
 // returns [ ["name", "Sam"], ["favBook", "Blood Meridian"] ]
 
 // more nested object
-deepEntries({name: "Sam", pets : {name: "fido"}}) 
+deepEntries({ name: 'Sam', pets: { name: 'fido' } });
 /** returns [
   ["name", "Sam"],
   ["pets",[["name", "fido"]]]
 ]
 **/
 // even more nesting...
-deepEntries({ name: "Sam", favBook: { title: "Blood Meridian", author: { name: "Cormac McCarthy"} } }); 
+deepEntries({
+  name: 'Sam',
+  favBook: { title: 'Blood Meridian', author: { name: 'Cormac McCarthy' } },
+});
 /** returns [
   ["name","Sam"],
   ["favBook",[["title","Blood Meridian"],["author", [["name","Cormac McCarthy"]]]
@@ -319,10 +317,10 @@ You will nee to use recursion in your implementation of this method.
 Be sure to build up your tests carefully and take care in building up your logic step by step.
 
 ```js
-deeplyEquals("a", "a"); // true
-deeplyEquals("a", "b"); // false
-deeplyEquals([1, 2, { a: "hello" }], [1, 2, { a: "hello" }]); // true
-deeplyEquals([1, 2, { a: "hello" }], [1, 2, { a: "bye" }]); // false
+deeplyEquals('a', 'a'); // true
+deeplyEquals('a', 'b'); // false
+deeplyEquals([1, 2, { a: 'hello' }], [1, 2, { a: 'hello' }]); // true
+deeplyEquals([1, 2, { a: 'hello' }], [1, 2, { a: 'bye' }]); // false
 ```
 
 NOTE - do not use JSON.stringify for this. If you were considering it, well done, you're very smart.
