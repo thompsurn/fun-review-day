@@ -113,7 +113,7 @@ describe('rememberMe', () => {
   });
   test('only calls the function once per unique set of arguments', () => {
     const addNums = (a, b, c, d, e) => a + b + c + d + e;
-    const spiedAdder = spy(addNums);
+    const spiedAdder = jest.fn(addNums);
     const rememberSpiedAdder = rememberMe(spiedAdder);
     expect(rememberSpiedAdder(1, 2, 3, 4, 5)).toBe(15);
     expect(rememberSpiedAdder(1, 2, 3, 4, 5)).toBe(15);
