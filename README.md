@@ -4,21 +4,26 @@ For this block review, you have several specifications which need to be complete
 
 ## Section 1 human-resources (Array Methods)
 
-For each of these challenges, be sure to use the appropriate array-method, and demonstrate your understanding of TDD.
+For each of these challenges, be sure to use the appropriate array-method and demonstrate your understanding of TDD.
 
-### 1 - removeAgents
+The functions in this section should be **pure** - so you should also aim to implement test cases to check the functions have no **side effects**, besides any other functionality.
+
+### 1 - `removeAgents`
 
 After a survey of your organisation, it has transpired that a few of the respondents have been very open about committing corporate espionage. As a diligent HR professional, please remove each employee whose admitted profession is `mole`;
 
 Your function should take an array of people objects, and return a new array of people objects whose profession is not `mole`.
 
 ```js
-const employees = [{ name: 'Sam', profession: 'artist' }, { name: 'Mitch', profession: 'mole' }];
+const employees = [
+  { name: 'Sam', profession: 'artist' },
+  { name: 'Mitch', profession: 'mole' },
+];
 
 removeAgents(employees); // returns [{name: 'Sam', profession: 'artist'}];
 ```
 
-### 2 - makeNameTags
+### 2 - `makeNameTags`
 
 You wouldn't usually be found doing work like this, but Jon is off sick, and the HR Director is having a meeting in a couple of hours to discuss the recent espionage problems. Please make name tags for each of the guests.
 
@@ -38,7 +43,7 @@ const guests = [
 makeNameTags(guests); // returns ['Mr Sam Caine, Northcoders']
 ```
 
-### 3 - createPoll
+### 3 - `createPoll`
 
 Usually we'd use survey monkey, but the managers have taken to building polls across the organisation as strings. Given an array of strings, please build a much more useful poll object.
 
@@ -59,7 +64,7 @@ Your final test should be using the NCFruitBowl from the challenge1-data file. _
 }
 ```
 
-### 4 - ADVANCED - removeSmarterAgents
+### 4 - ADVANCED - `removeSmarterAgents`
 
 _This challenge is advanced, if you've reached it, please proceed with the other sections before attempting this_
 
@@ -112,7 +117,7 @@ Examples of users to remove:
 
 ## Section 2 - Using Closures
 
-### 1 - invert
+### 1 - `invert`
 
 Write a higher-order function called `invert`.
 
@@ -145,7 +150,7 @@ isOdd(1); // returns true
 isOdd(2); // returns false
 ```
 
-### 2 - flip
+### 2 - `flip`
 
 Write a higher-order function called `flip` which takes a function as its only argument.
 
@@ -155,7 +160,9 @@ It should do the following:
 
 - The new function should take any number of arguments and then return an invocation to the original passed function with the same arguments **BUT** in reverse order.
 
-### 3 - ADVANCED -rememberMe
+### 3 - ADVANCED - `rememberMe`
+
+_This challenge is advanced, if you've reached it, please proceed with the other sections before attempting this_
 
 Write a higher-order function called `rememberMe`, which takes a function as it's only argument.
 
@@ -246,7 +253,7 @@ testMachine.credit; // 10
 
 ## Section 4 - Pizza Shop (ayschronous callbacks)
 
-### 1 - makePizza
+### 1 - `makePizza`
 
 You're the supervisor of a fast-food pizza restaurant and your staff are having trouble keeping up with the orders. You decide that, as always, javascript has the answers, and you decide to build a function to improve the efficiency of your staff and solve all of your management woes.
 
@@ -272,7 +279,9 @@ All of these utility functions are asynchronous so you'll have to make use of ca
 
 You can use the pre-prepared tests for this.
 
-### 2 - makePizzas
+### 2 - `makePizzas`
+
+_This challenge is advanced, if you've reached it, please proceed with the other sections before attempting this_
 
 Now you've got dealing with a single order down, you need to build a function that handles an array of pizzas, and brings them back in the correct order.
 
@@ -282,7 +291,7 @@ Do this with asynchronous TDD.
 
 ## Section 5 - Recursion
 
-### 1 - deepEntries
+### 1 - `deepEntries`
 
 Implement a function `deepEntries` that will take an object as its argument and go through that object to convert any nested-objects into an array of entries. Each entry is itself a sub-array with the key-value pair from the original object. Your function should be a recursive version of the native method [`Object.entries`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries). Use the documentation to help you in your implementation, but avoid using the method.
 
@@ -310,7 +319,7 @@ deepEntries({
 **/
 ```
 
-### 2 - deeplyEquals
+### 2 - `deeplyEquals`
 
 Implement a function called `deeplyEquals`. This function will check if two passed variables contain the same values. If passed _arrays_ or _objects_ the function will check the contents for equality.
 You will nee to use recursion in your implementation of this method.
@@ -323,8 +332,8 @@ deeplyEquals([1, 2, { a: 'hello' }], [1, 2, { a: 'hello' }]); // true
 deeplyEquals([1, 2, { a: 'hello' }], [1, 2, { a: 'bye' }]); // false
 ```
 
-NOTE - do not use JSON.stringify for this. If you were considering it, well done, you're very smart.
+NOTE - do not use `JSON.stringify` for this. If you were considering it, well done, you're very smart.
 
-### 3 - flat
+### 3 - `flat`
 
 Reimplement the experimental array method `flat`. You can find the [docs here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
