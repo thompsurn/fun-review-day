@@ -157,6 +157,8 @@ It should do the following:
 
 ### 3 - ADVANCED -rememberMe
 
+_This challenge is advanced, if you've reached it, please proceed with the other sections before attempting this_
+
 Write a higher-order function called `rememberMe`, which takes a function as it's only argument.
 
 It should do the following:
@@ -274,6 +276,8 @@ You can use the pre-prepared tests for this.
 
 ### 2 - makePizzas
 
+_This challenge is advanced, if you've reached it, please proceed with the other sections before attempting this_
+
 Now you've got dealing with a single order down, you need to build a function that handles an array of pizzas, and brings them back in the correct order.
 
 Using all the single pizza utils from before, write a function that takes an array and returns the prepared, cooked and boxed pizzas in an ordered array. You may not use a sort function.
@@ -326,5 +330,7 @@ deeplyEquals([1, 2, { a: 'hello' }], [1, 2, { a: 'bye' }]); // false
 NOTE - do not use JSON.stringify for this. If you were considering it, well done, you're very smart.
 
 ### 3 - flat
+
+_This challenge is advanced, if you've reached it, please proceed with the other sections before attempting this_
 
 Reimplement the experimental array method `flat`. You can find the [docs here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
