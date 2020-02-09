@@ -34,6 +34,7 @@ describe('invert()', () => {
     let returnsFalse = () => false;
     let returnsTrue = invert(returnsFalse);
     expect(returnsTrue()).toBe(!returnsFalse());
+
     let checkIsOdd = (num) => num % 2 === 1;
     let checkIsEven = invert(checkIsOdd);
     expect(checkIsEven(100)).toBe(!checkIsOdd(100));
@@ -117,9 +118,9 @@ describe('rememberMe', () => {
     const rememberSpiedAdder = rememberMe(spiedAdder);
     expect(rememberSpiedAdder(1, 2, 3, 4, 5)).toBe(15);
     expect(rememberSpiedAdder(1, 2, 3, 4, 5)).toBe(15);
-    expect(spiedAdder.mock.calls.length)).toBe(1);
+    expect(spiedAdder.mock.calls.length).toBe(1);
     expect(rememberSpiedAdder(1, 2, 3, 4, 6)).toBe(16);
     expect(rememberSpiedAdder(1, 2, 3, 4, 6)).toBe(16);
-    expect(spiedAdder.mock.calls.length)).toBe(2);
+    expect(spiedAdder.mock.calls.length).toBe(2);
   });
 });

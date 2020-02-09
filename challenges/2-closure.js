@@ -1,7 +1,7 @@
-const invert = () => {};
+function invert() {}
 
-const flip = () => {};
+function flip() {}
 
-const rememberMe = () => {};
+function rememberMe() {}
 
 module.exports = { invert, flip, rememberMe };
