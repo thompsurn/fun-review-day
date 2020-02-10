@@ -118,9 +118,9 @@ describe('rememberMe', () => {
     const rememberSpiedAdder = rememberMe(spiedAdder);
     expect(rememberSpiedAdder(1, 2, 3, 4, 5)).toBe(15);
     expect(rememberSpiedAdder(1, 2, 3, 4, 5)).toBe(15);
-    expect(spiedAdder.mock.calls.length).toBe(1);
+    expect(spiedAdder).toBeCalledTimes(1);
     expect(rememberSpiedAdder(1, 2, 3, 4, 6)).toBe(16);
     expect(rememberSpiedAdder(1, 2, 3, 4, 6)).toBe(16);
-    expect(spiedAdder.mock.calls.length).toBe(2);
+    expect(spiedAdder).toBeCalledTimes(2);
   });
 });
