@@ -315,7 +315,7 @@ deepEntries({
 /** returns [
   ["name","Sam"],
   ["favBook",[["title","Blood Meridian"],["author", [["name","Cormac McCarthy"]]]
-]
+]]]
 **/
 ```
 
