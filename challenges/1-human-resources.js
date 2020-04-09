@@ -1,18 +1,11 @@
+// 1
 
-// 1 
-
-function removeAgents (people) {
-
-}
+function removeAgents() {}
 
 // 2
 
-function makeNameTags (guests) {
-
-}
+function makeNameTags() {}
 
 // 3
 
-function createPoll(items) { }
-
-
+function createPoll() {}
