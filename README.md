@@ -1,10 +1,10 @@
-# FUNDAMENTALS BLOCK REVIEW
+# JS Fundamentals Revision Day
 
-For this block review, you have several specifications which need to be completed. You are expected to use TDD throughout in order to demonstrate your understanding of the questions and of good TDD practices. Good luck!
+Today you have several specifications which need to be completed. You are expected to use TDD throughout in order to demonstrate your understanding of the questions and of good TDD practices (the tests for _Section 2 - Using Closures_ have been written for you). Have fun!
 
 ## Section 1 human-resources (Array Methods)
 
-For each of these challenges, be sure to use the appropriate array-method and demonstrate your understanding of TDD.
+For each of these challenges, be sure to **use the appropriate array-method** and **demonstrate your understanding of TDD**.
 
 The functions in this section should be **pure** - so you should also aim to implement test cases to check the functions have no **side effects**, besides any other functionality.
 
