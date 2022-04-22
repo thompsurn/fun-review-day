@@ -2,6 +2,8 @@
 
 Today you have several specifications which need to be completed. You are expected to use TDD throughout in order to demonstrate your understanding of the questions and of good TDD practices (the tests for _Section 2 - Using Closures_ have been written for you). Have fun!
 
+`nb. `Please complete one challenge from each section first, before returning to the rest!
+
 ## Section 1 human-resources (Array Methods)
 
 For each of these challenges, be sure to **use the appropriate array-method** and **demonstrate your understanding of TDD**.
@@ -22,6 +24,8 @@ const employees = [
 
 removeAgents(employees); // returns [{name: 'Sam', profession: 'artist'}];
 ```
+
+`Now move on to the first closure problem`
 
 ### 2 - `makeNameTags`
 
@@ -150,6 +154,8 @@ isOdd(1); // returns true
 isOdd(2); // returns false
 ```
 
+`Now move on to the OOP vending machine section`
+
 ### 2 - `flip`
 
 Write a higher-order function called `flip` which takes a function as its only argument.
@@ -216,6 +222,8 @@ testMachine.stock;
  **/
 ```
 
+`Now move on to the first recursion problem`
+
 It must have an `addCredit` method which will update the machine credit.
 
 ```js
@@ -281,6 +289,8 @@ deepEntries({
 ]]]
 **/
 ```
+
+`Well done! You have completed a problem from each section! You may return to the array methods section to attempt the remaining challenges`
 
 ### 2 - `deeplyEquals`
 
