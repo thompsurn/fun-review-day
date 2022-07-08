@@ -1,8 +1,8 @@
-# JS Fundamentals Revision Day
+# JS Fundamentals Review Day
 
-Today you have several specifications which need to be completed. You are expected to use TDD throughout in order to demonstrate your understanding of the questions and of good TDD practices (the tests for _Section 2 - Using Closures_ have been written for you). Have fun!
+Today you have several specifications to work through. You are expected to use TDD throughout in order to demonstrate your understanding of the questions and of good TDD practices (the tests for _Section 2 - Using Closures_ have been written for you). Have fun!
 
-`nb. `Please complete one challenge from each section first, before returning to the rest!
+❗️ `nb.` - Please look out for the **red exclamation marks** ❗️ to tell you when to move onto the next section.
 
 ## Section 1 human-resources (Array Methods)
 
@@ -25,8 +25,6 @@ const employees = [
 removeAgents(employees); // returns [{name: 'Sam', profession: 'artist'}];
 ```
 
-`Now move on to the first closure problem`
-
 ### 2 - `makeNameTags`
 
 You wouldn't usually be found doing work like this, but Jon is off sick, and the HR Director is having a meeting in a couple of hours to discuss the recent espionage problems. Please make name tags for each of the guests.
@@ -46,6 +44,8 @@ const guests = [
 
 makeNameTags(guests); // returns ['Mr Sam Caine, Northcoders']
 ```
+
+❗️ `Now move on to the first closure problem` ❗️
 
 ### 3 - `createPoll`
 
@@ -154,7 +154,7 @@ isOdd(1); // returns true
 isOdd(2); // returns false
 ```
 
-`Now move on to the OOP vending machine section`
+❗️ `Now move on to the OOP vending machine section` ❗️
 
 ### 2 - `flip`
 
@@ -167,8 +167,6 @@ It should do the following:
 - The new function should take any number of arguments and then return an invocation to the original passed function with the same arguments **BUT** in reverse order.
 
 ### 3 - ADVANCED - `rememberMe`
-
-_This challenge is advanced, if you've reached it, please proceed with the other sections before attempting this_
 
 _This challenge is advanced, if you've reached it, please proceed with the other sections before attempting this_
 
@@ -222,7 +220,7 @@ testMachine.stock;
  **/
 ```
 
-`Now move on to the first recursion problem`
+❗️ `Now move on to the first recursion problem` ❗️
 
 It must have an `addCredit` method which will update the machine credit.
 
@@ -290,7 +288,7 @@ deepEntries({
 **/
 ```
 
-`Well done! You have completed a problem from each section! You may return to the array methods section to attempt the remaining challenges`
+❗️ `Well done! You have completed a problem from each section! Please continue with the remaining challenges from previous sections.` ❗️
 
 ### 2 - `deeplyEquals`
 
