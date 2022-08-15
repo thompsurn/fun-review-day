@@ -266,7 +266,7 @@ testMachine.credit; // 10
 Implement a function `deepEntries` that will take an object as its argument and go through that object to convert any nested-objects into an array of entries. Each entry is itself a sub-array with the key-value pair from the original object. Your function should be a recursive version of the native method [`Object.entries`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries). Use the documentation to help you in your implementation, but avoid using the method.
 
 ```js
-deeplyEntries({ name: "Sam" }); // returns [ ["name", "Sam"] ]
+deepEntries({ name: "Sam" }); // returns [ ["name", "Sam"] ]
 deepEntries({ name: "Sam", favBook: "Blood Meridian" });
 // returns [ ["name", "Sam"], ["favBook", "Blood Meridian"] ]
 
