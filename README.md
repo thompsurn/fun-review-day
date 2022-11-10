@@ -2,11 +2,11 @@
 
 Today you have several sections to work through. You are expected to use TDD throughout in order to demonstrate your understanding of the topics and of good TDD practices (the tests for _Section 3 - Using Closures_ have been written for you). Have fun!
 
+## Submitting your work
+
 At the end of each section please push your work up to github and send us a link to your repo. This can be done via the `/nchelp pr` slack command. Paste a link to your repo into the form and carry on with the next section.
 
-**tip**
-
-When running the test command you can pass jest a fileName pattern as an argument in the command line. e.g. `npm test 1` will only run tests that contain 1, just `__tests__/1-human-resources.test.js` in this case. You might find this useful to only run the tests you want to work on.
+**tip:** When running the test command you can pass jest a fileName pattern as an argument in the command line. e.g. `npm test 1` will only run tests that contain 1, just `__tests__/1-human-resources.test.js` in this case. You might find this useful to only run the tests you want to work on.
 
 ## Section 1 human-resources (Array Methods)
 
