@@ -6,7 +6,9 @@ Today you have several sections to work through. You are expected to use TDD thr
 
 ## Submitting your work
 
-At the end of each section please push your work up to github and send us a link to your repo. This can be done via the `/nchelp pr` slack command. Paste a link to your repo into the form and carry on with the next section.
+At the end of each section please push your work up to github and send us a link to your repo. This can be done via the `/nchelp review` slack command. Leave a comment in the form letting us know which section you've completed and add a link to your repo. Your repo url will be of the form `https://github.com/yourGithubUserName/fun-review-day`. You can copy this from the address bar in your browser or run `git remote -v` in the terminal.
+
+**tip** If you forgot to fork and cloned the Northcoders repo directly you can fork it afterwards and then change the remote by running `git remote set-url origin your_repo_link_here`.
 
 ## Section 1 human-resources (Array Methods)
 
@@ -78,6 +80,7 @@ Your final test should be using the NCFruitBowl from the `data/poll-data.js` fil
 ```
 
 ❗️ `Push your work to Github and submit it before moving on` ❗️
+❗️ `Commit and push your work to github then use /nchelp review to submit` ❗️
 
 ## Section 2 - OOP Vending Machine
 
@@ -155,6 +158,7 @@ testMachine.credit; // 10
 ```
 
 ❗️ `Push your work to Github and submit it before moving on` ❗️
+❗️ `Commit and push your work to github then use /nchelp review to submit` ❗️
 
 ## Section 3 - Using Closures
 
@@ -224,6 +228,7 @@ securedSum("oops", 10, 5); // returns 'Sorry your password is incorrect!';
 ```
 
 ❗️ `Push your work to Github and submit it before moving on` ❗️
+❗️ `Commit and push your work to github then use /nchelp review to submit` ❗️
 
 ## Section 4 - Recursion
 
@@ -270,6 +275,7 @@ deeplyEquals([1, 2, { a: "hello" }], [1, 2, { a: "bye" }]); // false
 NOTE - do not use `JSON.stringify` for this. If you were considering it, well done, you're very smart.
 
 ❗️ `Push your work to Github and submit it before moving on` ❗️
+❗️ `Commit and push your work to github then use /nchelp review to submit` ❗️
 
 ## Section 5 - Additional
 
