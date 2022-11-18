@@ -158,6 +158,7 @@ testMachine.credit; // 10
 ```
 
 ❗️ `Push your work to Github and submit it before moving on` ❗️
+
 ❗️ `Commit and push your work to github then use /nchelp review to submit` ❗️
 
 ## Section 3 - Using Closures
@@ -228,6 +229,7 @@ securedSum("oops", 10, 5); // returns 'Sorry your password is incorrect!';
 ```
 
 ❗️ `Push your work to Github and submit it before moving on` ❗️
+
 ❗️ `Commit and push your work to github then use /nchelp review to submit` ❗️
 
 ## Section 4 - Recursion
@@ -275,6 +277,7 @@ deeplyEquals([1, 2, { a: "hello" }], [1, 2, { a: "bye" }]); // false
 NOTE - do not use `JSON.stringify` for this. If you were considering it, well done, you're very smart.
 
 ❗️ `Push your work to Github and submit it before moving on` ❗️
+
 ❗️ `Commit and push your work to github then use /nchelp review to submit` ❗️
 
 ## Section 5 - Additional
