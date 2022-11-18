@@ -80,6 +80,7 @@ Your final test should be using the NCFruitBowl from the `data/poll-data.js` fil
 ```
 
 ❗️ `Push your work to Github and submit it before moving on` ❗️
+
 ❗️ `Commit and push your work to github then use /nchelp review to submit` ❗️
 
 ## Section 2 - OOP Vending Machine
