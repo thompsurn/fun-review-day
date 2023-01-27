@@ -139,7 +139,7 @@ const marsBars = { name: "marsBar", price: 50, quantity: 6 };
 const testMachine = new VendingMachine();
 testMachine.addStock(marsBars, "A");
 testMachine.addCredit(30);
-testMachine.purchaseItem("A"); // returns 'Insufficent credit!'
+testMachine.purchaseItem("A"); // returns 'Insufficient credit!'
 ```
 
 ```js
