@@ -139,7 +139,7 @@ const marsBars = { name: "marsBar", price: 50, quantity: 6 };
 const testMachine = new VendingMachine();
 testMachine.addStock(marsBars, "A");
 testMachine.addCredit(30);
-testMachine.purchaseItem("A"); // returns 'Insufficent credit!'
+testMachine.purchaseItem("A"); // returns 'Insufficient credit!'
 ```
 
 ```js
@@ -163,6 +163,8 @@ testMachine.credit; // 10
 ❗️ `Commit and push your work to github then use /nchelp review to submit` ❗️
 
 ## Section 3 - Using Closures
+
+**Note:** the tests in this section are pre-written but you _must_ change each `xdescribe` in the test file to `describe` in order to run the tests.
 
 ### 1 - `generateMultiples`
 
