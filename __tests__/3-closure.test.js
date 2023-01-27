@@ -1,4 +1,8 @@
-const { generateMultiples, secureFunc, rememberMe } = require("./2-closure.js");
+const {
+  generateMultiples,
+  secureFunc,
+  rememberMe,
+} = require("../sections/3-closure.js");
 
 describe("generateMultiples()", () => {
   test("will return a new function", () => {
