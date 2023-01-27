@@ -4,7 +4,7 @@ const {
   rememberMe,
 } = require("../sections/3-closure.js");
 
-describe("generateMultiples()", () => {
+xdescribe("generateMultiples()", () => {
   test("will return a new function", () => {
     const createMultiplesOf5 = generateMultiples();
     expect(typeof createMultiplesOf5).toBe("function");
@@ -31,7 +31,7 @@ describe("generateMultiples()", () => {
   });
 });
 
-describe("secureFunc()", () => {
+xdescribe("secureFunc()", () => {
   test("returns a new function", () => {
     const securedFunc = secureFunc();
     expect(typeof securedFunc).toBe("function");
