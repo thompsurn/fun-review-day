@@ -4,6 +4,7 @@ const {
   rememberMe,
 } = require("../sections/3-closure.js");
 
+// change 'xdescribe' to 'describe' to run the tests!
 xdescribe("generateMultiples()", () => {
   test("will return a new function", () => {
     const createMultiplesOf5 = generateMultiples();
@@ -31,6 +32,7 @@ xdescribe("generateMultiples()", () => {
   });
 });
 
+// change 'xdescribe' to 'describe' to run the tests!
 xdescribe("secureFunc()", () => {
   test("returns a new function", () => {
     const securedFunc = secureFunc();

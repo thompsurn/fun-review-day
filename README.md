@@ -164,6 +164,8 @@ testMachine.credit; // 10
 
 ## Section 3 - Using Closures
 
+**Note:** the tests in this section are pre-written but you _must_ change each `xdescribe` in the test file to `describe` in order to run the tests.
+
 ### 1 - `generateMultiples`
 
 Write a higher-order function called `generateMultiples`.
