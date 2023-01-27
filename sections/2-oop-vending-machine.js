@@ -1,3 +1,3 @@
 class VendingMachine {}
 
-module.exports = { VendingMachine };
+module.exports = VendingMachine;
