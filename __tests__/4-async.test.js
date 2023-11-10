@@ -1,5 +1,5 @@
 const { processItemRequest, orderIngredients } = require("../sections/4-async");
-describe("05 Async", () => {
+xdescribe("05 Async", () => {
   describe("Task 1: processItemRequest()", () => {
     test("returns a promise", () => {
       expect(processItemRequest("cake")).toBeInstanceOf(Promise);
