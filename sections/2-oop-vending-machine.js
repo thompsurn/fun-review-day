@@ -7,6 +7,10 @@ class VendingMachine {
   addCredit(amount){
     this.credit += amount;
   }
+
+  creditChecker(price){
+    return this.credit >= price ? true : false
+  }
 }
 
 module.exports = VendingMachine;

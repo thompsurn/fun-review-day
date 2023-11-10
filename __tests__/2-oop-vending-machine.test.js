@@ -5,6 +5,7 @@ describe("Vending Machine", () => {
     test("properties", () => {
       const testVendingMachine = new VendingMachine();
       expect(testVendingMachine).toHaveProperty("credit")
+      expect(testVendingMachine.credit).toBe(0)
     });
     test("properties", () => {
       const testVendingMachine = new VendingMachine();
@@ -17,7 +18,6 @@ describe("Vending Machine", () => {
   describe('addCredit method', () => {
     test("adds initial amount given", () => {
       const testVendingMachine = new VendingMachine();
-      expect(testVendingMachine.credit).toBe(0)
       testVendingMachine.addCredit(10)
       expect(testVendingMachine.credit).toBe(10)
 
@@ -27,11 +27,24 @@ describe("Vending Machine", () => {
     })
     test("accumulates the amount given", () => {
       const testVendingMachine = new VendingMachine();
-      expect(testVendingMachine.credit).toBe(0)
       testVendingMachine.addCredit(10)
       expect(testVendingMachine.credit).toBe(10)
       testVendingMachine.addCredit(40)
       expect(testVendingMachine.credit).toBe(50)
+    })
+  });
+
+  describe('helper methods', () => {
+    test("creditChecker validates when there is sufficient credit for an item", () => {
+      const testVendingMachine = new VendingMachine();
+      testVendingMachine.addCredit(60)
+      expect(testVendingMachine.creditChecker(50)).toBe(true)
+      expect(testVendingMachine.creditChecker(60)).toBe(true)
+    })
+    test("creditChecker validates when there is sufficient credit for an item", () => {
+      const testVendingMachine = new VendingMachine();
+      testVendingMachine.addCredit(50)
+      expect(testVendingMachine.creditChecker(100)).toBe(false)
     })
   });
 });
