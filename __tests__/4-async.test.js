@@ -19,9 +19,9 @@ xdescribe("05 Async", () => {
         ]);
       });
     });
-    test("if item not found resolves with message of `<item> not found`", () => {
-      return processItemRequest("mashed potatoes").then((message) => {
-        expect(message).toBe("mashed potatoes not found");
+    test("if item not found resolves with object with msg of `<item> not found`", () => {
+      return processItemRequest("mashed potatoes").then((error) => {
+        expect(error.msg).toBe("mashed potatoes not found");
       });
     });
   });
@@ -42,9 +42,9 @@ xdescribe("05 Async", () => {
         expect(totalCost).toBe(90);
       });
     });
-    test("if any of the ingredients are not in stock should respond with a message of `could not find one or more ingredients`", () => {
-      return orderIngredients("bread").then((message) => {
-        expect(message).toBe("could not find one or more ingredients");
+    test("if any of the ingredients are not in stock should respond with object with msg of `could not find one or more ingredients`", () => {
+      return orderIngredients("bread").then((error) => {
+        expect(error.message).toBe("could not find one or more ingredients");
       });
     });
   });
