@@ -1,6 +1,6 @@
 # Utils Documentation
 
-__Please note: Do not change the util functions! The test files realy on their behaviour to remain unchanged.__
+__Please note: Do not change the util functions! The test files rely on their behaviour to remain unchanged.__
 
 ## findIngredients()
 
