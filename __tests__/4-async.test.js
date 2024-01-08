@@ -44,7 +44,7 @@ xdescribe("05 Async", () => {
     });
     test("if any of the ingredients are not in stock should respond with object with msg of `could not find one or more ingredients`", () => {
       return orderIngredients("bread").then((error) => {
-        expect(error.message).toBe("could not find one or more ingredients");
+        expect(error.msg).toBe("could not find one or more ingredients");
       });
     });
   });
