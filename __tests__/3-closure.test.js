@@ -5,7 +5,7 @@ const {
 } = require("../sections/3-closure.js");
 
 // change 'xdescribe' to 'describe' to run the tests!
-xdescribe("generateMultiples()", () => {
+describe("generateMultiples()", () => {
   test("will return a new function", () => {
     const createMultiplesOf5 = generateMultiples();
     expect(typeof createMultiplesOf5).toBe("function");
@@ -33,12 +33,12 @@ xdescribe("generateMultiples()", () => {
 });
 
 // change 'xdescribe' to 'describe' to run the tests!
-xdescribe("secureFunc()", () => {
-  test("returns a new function", () => {
+describe("secureFunc()", () => {
+  test.only("returns a new function", () => {
     const securedFunc = secureFunc();
     expect(typeof securedFunc).toBe("function");
   });
-  test("new function returns an error message when password is incorrect", () => {
+  test.only("new function returns an error message when password is incorrect", () => {
     function printSecret() {
       return "I love raw garlic";
     }
@@ -47,14 +47,14 @@ xdescribe("secureFunc()", () => {
       `Sorry your password is incorrect!`
     );
   });
-  test("new function will return a call to the original function when password is correct", () => {
+  test.only("new function will return a call to the original function when password is correct", () => {
     function printSecret() {
       return "I love raw garlic!";
     }
     const securedPrintSecret = secureFunc("Ilovevegans123!", printSecret);
     expect(securedPrintSecret("Ilovevegans123!")).toBe("I love raw garlic!");
   });
-  test("new function can pass all its arguments to the original function", () => {
+  test.only("new function can pass all its arguments to the original function", () => {
     const mockFunction = jest.fn();
 
     const securedFunction = secureFunc("Ilovevegans123!", mockFunction);
