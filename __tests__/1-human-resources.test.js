@@ -1,3 +1,4 @@
+const NCFruitBowl = require("../data/poll-data.js");
 const {
   createPoll,
   makeNameTags,
@@ -59,3 +60,47 @@ describe("makeNameTags", () => {
     expect(actual).toEqual(expected)
   });
 });
+
+/*
+Usually we'd use SurveyMonkey, but the managers have taken to building polls across the organisation as strings. Given an array of strings, please build a much more useful poll object.
+*/
+
+describe('createPoll', () => {
+  test('should return a single fruit with a single occurance', () => {
+    const NCFruitBowl = ['apple']
+
+    const actual = createPoll(NCFruitBowl)
+    const expected = {apple : 1}
+    expect(actual).toEqual(expected)
+  })
+  test('should return the accumulated total of fruit when the same fruit is passed more than once', () => {
+    const NCFruitBowl = ['apple', 'apple', 'apple']
+
+    const actual = createPoll(NCFruitBowl)
+    const expected = {apple : 3}
+    expect(actual).toEqual(expected)
+
+  })
+  test('should return the accumulated total of different fruits when passed more than once', () => {
+    const NCFruitBowl = ['apple', 'pear', 'pear', 'apple', 'orange']
+
+    const actual = createPoll(NCFruitBowl)
+    const expected = {apple : 2, pear : 2, orange: 1}
+    expect(actual).toEqual(expected)
+
+  })
+  test('should return the accumulated total of different fruits when passed a large array of fruits from a seperate file ', () => {
+    const NCFruitBowl = require('../data/poll-data.js')
+
+    const actual = createPoll(NCFruitBowl)
+    const expected = {
+      apple: 276,
+      pear: 223,
+      banana: 263,
+      orange: 238,
+      'lonesome plum': 1
+    }
+    expect(actual).toEqual(expected)
+
+  })
+})

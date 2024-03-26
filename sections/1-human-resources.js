@@ -4,6 +4,12 @@ function makeNameTags(guests) {
     }))
 }
 
-function createPoll() {}
+function createPoll(NCFruitBowl) {
+    let poll = {}
+    NCFruitBowl.forEach((fruit) => {
+        poll[fruit] = (poll[fruit] || 0) +1
+    })
+    return poll
+}
 
 module.exports = { makeNameTags, createPoll };
