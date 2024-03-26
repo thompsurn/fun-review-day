@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/northcoders/fun-review-1#readme",
   "devDependencies": {
-    "jest": "^27.3.1",
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "jest": "^27.5.1"
   }
 }
